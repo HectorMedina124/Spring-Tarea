@@ -18,10 +18,8 @@ public class BaseServiceImpl implements BaseService {
 	@Override
 	public ResponseEntity<?> getHolaMundo() {
 		 Map<String, Object> respuesta=new HashMap<>();
-		   
-		   System.out.println("HOLA");
-		   LOG.info("Hola Mundo desde Spring Boot - getHola");
-		   respuesta.put("respuesta", "Hola Mundo Desde Spring Boot - getHol - 202Accepted");
+		   LOG.info("Hola Mundo desde Spring Boot- getHolaMundo");
+		   respuesta.put("respuesta", "Hola Mundo Desde Spring Boot- getHolaMundo  - 202Accepted");
 		   return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.ACCEPTED);
 	}
 

@@ -1,9 +1,9 @@
-package com.hello.world.app.repository;
+package com.puntosingular.base.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.hello.world.app.models.User;
+import com.puntosingular.base.models.User;
 @Repository
 public interface UserRepository extends CrudRepository<User, Long>{
 

@@ -1,4 +1,4 @@
-package com.hello.world.app.models;
+package com.puntosingular.base.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

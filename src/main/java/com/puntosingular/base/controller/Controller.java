@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.puntosingular.base.services.BaseService;
 @RestController
-@RequestMapping("/base")
+@RequestMapping(value="/base")
 public class Controller {
 
 	private final static Logger LOG= Logger.getLogger("com.puntosingular.base.controller");
@@ -22,18 +22,18 @@ public class Controller {
 	@Autowired
 	BaseService baseService;
 	
-	@GetMapping("/holaMundo")
+	@GetMapping(value="/holaMundo")
 	public ResponseEntity<?> holaMundo() {
 	   Map<String, Object> respuesta=new HashMap<>();
 	   
 	   System.out.println("HOLA");
-	   LOG.info("Hola Mundo desde Spring Boot");
+	   //LOG.info("Hola Mundo desde Spring Boot");
 	   respuesta.put("respuesta", "Hola Mundo Desde Spring Boot - 202Accepted");
 	   return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.ACCEPTED);
 	}
 	
 	
-	@GetMapping("getHolaMudo")
+	@GetMapping(value="/getHolaMundo")
 	public ResponseEntity<?> getHolaMudo() {
 		return baseService.getHolaMundo();
 	  
