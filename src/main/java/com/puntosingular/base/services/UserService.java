@@ -9,6 +9,4 @@ public interface UserService {
 	public List<UserDTO> getUsers();
 	public UserDTO getUsersByName(String name);
 	public UserDTO findByName(String name);
-
-
 }
